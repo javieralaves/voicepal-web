@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this to your CSS file */
+@media (max-width: 768px) {
+    /* Adjust the overall padding and margin for smaller screens */
+    .mx-auto.px-4.max-w-xl.py-10 {
+        padding: 20px 10px;
+        max-width: 95%;
+    }
+
+    /* Header font size adjustments */
+    header h1 {
+        font-size: 24px; /* Smaller title font */
+    }
+    header p {
+        font-size: 18px; /* Smaller subtitle font */
+    }
+
+    /* Section headings */
+    .text-lg.font-semibold {
+        font-size: 20px; /* Slightly larger for readability */
+    }
+
+    /* Adjust button sizes and padding for better touch interaction */
+    .text-sm.text-blue-500 {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    /* Adjust badge size and position */
+    .fixed.bottom-4.right-4.bg-indigo-600 {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 15px;
+    }
+
+    /* Ensure images are responsive */
+    .w-full.h-64.bg-gray-300 {
+        height: auto; /* Adjust height automatically */
+        max-width: 100%; /* Max width to fit container */
+    }
+}
